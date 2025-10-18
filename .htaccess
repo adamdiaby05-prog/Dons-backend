@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Router vers api_barapay_payment.php
+RewriteRule ^api_barapay_payment\.php$ api_barapay_payment.php [L]
+
+# Router vers api_payment_database.php pour les autres requêtes
+RewriteRule ^api_payment_database\.php$ api_payment_database.php [L]
+
+# Router par défaut vers index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]

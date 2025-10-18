@@ -1,0 +1,1084 @@
+[
+    {
+        "id": 1,
+        "amount": 1000,
+        "phone_number": "123456789",
+        "payment_method": "orange_money",
+        "status": "completed",
+        "created_at": "2025-10-16 02:04:42"
+    },
+    {
+        "id": 2,
+        "amount": 2000,
+        "phone_number": "987654321",
+        "payment_method": "mtn_mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 02:34:42"
+    },
+    {
+        "id": 2646,
+        "amount": 3044,
+        "phone_number": "232324345",
+        "payment_method": "orange_money",
+        "status": "completed",
+        "created_at": "2025-10-16 03:04:42"
+    },
+    {
+        "id": 8522,
+        "amount": 1099,
+        "phone_number": "+2250504989867",
+        "payment_method": "mobile_money",
+        "status": "completed",
+        "created_at": "2025-10-16 03:05:38"
+    },
+    {
+        "id": "PAY_1760579675_5794",
+        "amount": 5000,
+        "phone_number": "070123456",
+        "payment_method": "orange_money",
+        "status": "completed",
+        "created_at": "2025-10-16 03:54:36",
+        "reference": "DONS-20251016035435-1204",
+        "gateway": "Barapay"
+    },
+    {
+        "id": 2906,
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "orange_money",
+        "status": "completed",
+        "created_at": "2025-10-16 11:04:37",
+        "type": "test"
+    },
+    {
+        "id": "PAY_68f0c24974ea0",
+        "barapay_reference": "DONS-20251016-2331",
+        "amount": 10000,
+        "phone_number": "123456789",
+        "payment_method": "orange_money",
+        "status": "pending",
+        "created_at": "2025-10-16 12:00:41",
+        "type": "barapay",
+        "barapay_data": {
+            "amount": 10000,
+            "phone_number": "123456789",
+            "payment_method": "orange_money",
+            "description": "Paiement DONS",
+            "reference": "DONS-20251016-2331",
+            "callback_url": "http:\/\/localhost:8000\/api\/barapay\/callback"
+        }
+    },
+    {
+        "id": "PAY_68f0c2935167b",
+        "barapay_reference": "DONS-20251016-0207",
+        "amount": 15000,
+        "phone_number": "987654321",
+        "payment_method": "mtn_mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 12:01:55",
+        "type": "barapay",
+        "barapay_data": {
+            "amount": 15000,
+            "phone_number": "987654321",
+            "payment_method": "mtn_mobile_money",
+            "description": "Paiement DONS",
+            "reference": "DONS-20251016-0207",
+            "callback_url": "http:\/\/localhost:8000\/api\/barapay\/callback"
+        }
+    },
+    {
+        "id": "PAY_68f0c2ab063ee",
+        "barapay_reference": "DONS-20251016-2947",
+        "amount": 20000,
+        "phone_number": "555666777",
+        "payment_method": "orange_money",
+        "status": "pending",
+        "created_at": "2025-10-16 12:02:19",
+        "type": "barapay",
+        "barapay_data": {
+            "amount": 20000,
+            "phone_number": "555666777",
+            "payment_method": "orange_money",
+            "description": "Paiement DONS",
+            "reference": "DONS-20251016-2947",
+            "callback_url": "http:\/\/localhost:8000\/api\/barapay\/callback"
+        }
+    },
+    {
+        "id": "PAY_68f0d45c35696",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 13:17:48",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/checkout.barapay.net\/payment\/DONS-20251016-4408",
+        "barapay_reference": "DONS-20251016-4408",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "123456789",
+            "description": "Paiement DONS - 5000 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d6ffc3ba0",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 13:29:03",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/checkout.barapay.net\/payment\/DONS-20251016-7749",
+        "barapay_reference": "DONS-20251016-7749",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "123456789",
+            "description": "Paiement DONS - 5000 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d72f29216",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 13:29:51",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/checkout.barapay.net\/payment\/DONS-20251016-5470",
+        "barapay_reference": "DONS-20251016-5470",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "123456789",
+            "description": "Paiement DONS - 5000 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d79128adf",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 13:31:29",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/checkout.barapay.net\/payment\/DONS-20251016-9341",
+        "barapay_reference": "DONS-20251016-9341",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "+2250505979884",
+            "description": "Paiement DONS - 10 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d7da59288",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 13:32:42",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/checkout.barapay.net\/payment\/DONS-20251016-2984",
+        "barapay_reference": "DONS-20251016-2984",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "+2250505979884",
+            "description": "Paiement DONS - 10 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d7e9a1cb2",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 13:32:57",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/checkout.barapay.net\/payment\/DONS-20251016-5148",
+        "barapay_reference": "DONS-20251016-5148",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "+2250505979884",
+            "description": "Paiement DONS - 10 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d7fb1d905",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 13:33:15",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/checkout.barapay.net\/payment\/DONS-20251016-6271",
+        "barapay_reference": "DONS-20251016-6271",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "+2250505979884",
+            "description": "Paiement DONS - 10 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d9109ceef",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 13:37:52",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/barapay.net\/checkout\/DONS-20251016-9105",
+        "barapay_reference": "DONS-20251016-9105",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "123456789",
+            "description": "Paiement DONS - 5000 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0d96582715",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 13:39:17",
+        "type": "barapay_real",
+        "checkout_url": "http:\/\/localhost:8000\/barapay_checkout.php?ref=DONS-20251016-8865&amount=5000&phone=123456789",
+        "barapay_reference": "DONS-20251016-8865",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "123456789",
+            "description": "Paiement DONS - 5000 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0daf47e9e4",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 13:45:56",
+        "type": "barapay_real",
+        "checkout_url": "http:\/\/localhost:8000\/barapay_checkout.php?ref=DONS-20251016-7241&amount=5000&phone=123456789",
+        "barapay_reference": "DONS-20251016-7241",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "123456789",
+            "description": "Paiement DONS - 5000 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0dd7aebecd",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 13:56:42",
+        "type": "barapay_real",
+        "checkout_url": "http:\/\/localhost:8000\/checkout.php?ref=DONS-20251016-6354&amount=5000&phone=123456789",
+        "barapay_reference": "DONS-20251016-6354",
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            },
+            "client_id": "wjb7lzQVialbcwMNTPD1IojrRzPIIl",
+            "client_secret": "eXSMVquRfnUi6u5epkKFbxym1bZxSjgfHMxJlGGKq9j1amulx97Cj4QB7vZFzuyRUm4UC9mCHYhfzWn34arIyW4G2EU9vcdcQsb1",
+            "phone_number": "123456789",
+            "description": "Paiement DONS - 5000 FCFA"
+        }
+    },
+    {
+        "id": "PAY_68f0e5a82bec4",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 14:31:36",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF",
+        "barapay_reference": "DONS-20251016-4298",
+        "real_payment": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0e6f07854c",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 14:37:04",
+        "type": "barapay_real",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=123456789&ref=DONS-20251016-2837&description=Paiement+DONS+-+5000+FCFA&success_url=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fpayment%2Fsuccess&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fpayment%2Fcancel",
+        "barapay_reference": "DONS-20251016-2837",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0ea483f031",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 14:51:20",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=&ref=REF_68f0ea4825126",
+        "barapay_reference": "DONS-20251016-9709",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ebad13270",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 14:57:17",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=&ref=REF_68f0ebacede19",
+        "barapay_reference": "DONS-20251016-6187",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ecc959ccd",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 15:02:01",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=10&currency=XOF&phone=&ref=REF_68f0ecc9536d9",
+        "barapay_reference": "DONS-20251016-3515",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ed4e2c094",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 15:04:14",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=10&currency=XOF&phone=&ref=REF_68f0ed4e23640",
+        "barapay_reference": "DONS-20251016-1576",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ed94519be",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:05:24",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=&ref=REF_68f0ed944ff8a",
+        "barapay_reference": "DONS-20251016-1999",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ed9e968cc",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:05:34",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=&ref=REF_68f0ed9e8ebcd",
+        "barapay_reference": "DONS-20251016-6972",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ee02b656f",
+        "amount": 102,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 15:07:14",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=102&currency=XOF&phone=&ref=REF_68f0ee02b3803",
+        "barapay_reference": "DONS-20251016-0097",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 102,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 102,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0eeb98dd2a",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 15:10:17",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=10&currency=XOF&phone=&ref=REF_68f0eeb988ebb",
+        "barapay_reference": "DONS-20251016-8784",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0eed53cab2",
+        "amount": 10,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 15:10:45",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=10&currency=XOF&phone=&ref=REF_68f0eed5394b2",
+        "barapay_reference": "DONS-20251016-6054",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 10,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 10,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ef6e842c3",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:13:18",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=&ref=REF_68f0ef6e81708",
+        "barapay_reference": "DONS-20251016-7566",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0ef81d8ca8",
+        "amount": 5000,
+        "phone_number": "123456789",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:13:37",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=&ref=REF_68f0ef81c5abd",
+        "barapay_reference": "DONS-20251016-6181",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0f01305fb5",
+        "amount": 5000,
+        "phone_number": "+2250505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:16:03",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=%2B2250505979884&ref=REF_68f0f012f31bc",
+        "barapay_reference": "DONS-20251016-3641",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0f023ca710",
+        "amount": 5000,
+        "phone_number": "+2250505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:16:19",
+        "type": "barapay_official",
+        "checkout_url": "https:\/\/barapay.net\/checkout?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=%2B2250505979884&ref=REF_68f0f023c8a7f",
+        "barapay_reference": "DONS-20251016-4859",
+        "real_payment": true,
+        "official_sdk": true,
+        "barapay_data": {
+            "payer": {
+                "payment_method": "PayMoney"
+            },
+            "amount": {
+                "total": 5000,
+                "currency": "XOF"
+            },
+            "transaction": {
+                "amount": {
+                    "total": 5000,
+                    "currency": "XOF"
+                }
+            },
+            "redirect_urls": {
+                "success_url": "http:\/\/localhost:3000\/#\/payment\/success",
+                "cancel_url": "http:\/\/localhost:3000\/#\/payment\/cancel"
+            }
+        }
+    },
+    {
+        "id": "PAY_68f0f2eee24c9",
+        "amount": 5000,
+        "phone_number": "+2250505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:28:14",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=%2B2250505979884&ref=DONS-20251016-4395&description=Paiement+DONS+-+5000+FCFA&success_url=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fpayment%2Fsuccess&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fpayment%2Fcancel",
+        "barapay_reference": "DONS-20251016-4395",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0f2f7221e5",
+        "amount": 5000,
+        "phone_number": "+2250505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:28:23",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=%2B2250505979884&ref=DONS-20251016-0070&description=Paiement+DONS+-+5000+FCFA&success_url=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fpayment%2Fsuccess&cancel_url=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fpayment%2Fcancel",
+        "barapay_reference": "DONS-20251016-0070",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0f45958a89",
+        "amount": 5000,
+        "phone_number": "+2250505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:34:17",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=%2B2250505979884&ref=DONS-20251016-3758&description=Paiement+DONS+-+5000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-3758",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0f532b609b",
+        "amount": 5000,
+        "phone_number": "+2250505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:37:54",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=%2B2250505979884&ref=DONS-20251016-4842&description=Paiement+DONS+-+5000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-4842",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0f583e9a51",
+        "amount": 1000,
+        "phone_number": "0505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:39:15",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=1000&currency=XOF&phone=0505979884&ref=DONS-20251016-1067&description=Paiement+DONS+-+1000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-1067",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0f5bec642b",
+        "amount": 1000,
+        "phone_number": "+2250505979884",
+        "payment_method": "mobile_money",
+        "status": "pending",
+        "created_at": "2025-10-16 15:40:14",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=1000&currency=XOF&phone=%2B2250505979884&ref=DONS-20251016-9906&description=Paiement+DONS+-+1000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-9906",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0f87c1c770",
+        "amount": 2000,
+        "phone_number": "0505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 15:51:56",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=2000&currency=XOF&phone=0505979884&ref=DONS-20251016-2591&description=Paiement+DONS+-+2000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-2591",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0fc61111b4",
+        "amount": 5000,
+        "phone_number": "0505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 16:08:33",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=5000&currency=XOF&phone=0505979884&ref=DONS-20251016-8244&description=Paiement+DONS+-+5000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-8244",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0fd368ff46",
+        "amount": 1000,
+        "phone_number": "0505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 16:12:06",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=1000&currency=XOF&phone=0505979884&ref=DONS-20251016-6646&description=Paiement+DONS+-+1000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-6646",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0fe6bd49d1",
+        "amount": 1000,
+        "phone_number": "0505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 16:17:15",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=1000&currency=XOF&phone=0505979884&ref=DONS-20251016-0550&description=Paiement+DONS+-+1000+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-0550",
+        "real_payment": true,
+        "mobile_money": true
+    },
+    {
+        "id": "PAY_68f0ffdcf2d1c",
+        "amount": 500,
+        "phone_number": "0505979884",
+        "payment_method": "PayMoney",
+        "status": "pending",
+        "created_at": "2025-10-16 16:23:24",
+        "type": "barapay_simple",
+        "checkout_url": "https:\/\/barapay.net\/pay?client_id=wjb7lzQVialbcwMNTPD1IojrRzPIIl&amount=500&currency=XOF&phone=0505979884&ref=DONS-20251016-2234&description=Paiement+DONS+-+500+FCFA&success_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-success.php&cancel_url=http%3A%2F%2Flocalhost%3A8000%2Fpayment-cancel.php",
+        "barapay_reference": "DONS-20251016-2234",
+        "real_payment": true,
+        "mobile_money": true
+    }
+]

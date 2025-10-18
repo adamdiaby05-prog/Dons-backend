@@ -1,0 +1,149 @@
+<?php
+// Serveur simplifié avec vraie base de données
+require_once 'vendor/autoload.php';
+
+use Illuminate\Support\Facades\DB;
+
+// Charger l'application Laravel
+$app = require_once 'bootstrap/app.php';
+$app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
+
+// Configuration CORS
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Accept, Authorization');
+header('Content-Type: application/json');
+
+// Gérer les requêtes OPTIONS (preflight)
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+$request_uri = $_SERVER['REQUEST_URI'];
+$method = $_SERVER['REQUEST_METHOD'];
+
+try {
+    // Endpoint pour récupérer les données utilisateur
+    if ($request_uri === '/api/user' && $method === 'GET') {
+        $headers = getallheaders();
+        $auth_header = $headers['Authorization'] ?? '';
+        
+        if (strpos($auth_header, 'Bearer ') === 0) {
+            $user_data = [
+                'id' => 1,
+                'first_name' => 'Admin',
+                'last_name' => 'Test',
+                'phone_number' => '0701234567',
+                'email' => 'admin@test.com',
+                'phone_verified' => true,
+                'is_admin' => true
+            ];
+            echo json_encode($user_data);
+        } else {
+            http_response_code(401);
+            echo json_encode(['success' => 0, 'message' => 'Token requis']);
+        }
+        exit();
+    }
+    
+    // Endpoint pour récupérer les paiements
+    if ($request_uri === '/api/payments' && $method === 'GET') {
+        $query_params = [];
+        parse_str($_SERVER['QUERY_STRING'], $query_params);
+        $page = $query_params['page'] ?? 1;
+        
+        // Requête simplifiée
+        $payments = DB::table('payments')
+            ->leftJoin('contributions', 'payments.contribution_id', '=', 'contributions.id')
+            ->leftJoin('users', 'contributions.user_id', '=', 'users.id')
+            ->select(
+                'payments.id',
+                'payments.amount',
+                'payments.status',
+                'payments.payment_method',
+                'payments.payment_reference',
+                'payments.phone_number',
+                'payments.created_at',
+                DB::raw("COALESCE(CONCAT(users.first_name, ' ', users.last_name), 'Utilisateur inconnu') as user_name")
+            )
+            ->orderBy('payments.created_at', 'desc')
+            ->get();
+        
+        $formatted_payments = [];
+        foreach ($payments as $payment) {
+            $formatted_payments[] = [
+                'id' => $payment->id,
+                'payment_reference' => $payment->payment_reference,
+                'amount' => (float)$payment->amount,
+                'status' => $payment->status,
+                'payment_method' => $payment->payment_method,
+                'phone_number' => $payment->phone_number,
+                'created_at' => $payment->created_at,
+                'user_name' => $payment->user_name
+            ];
+        }
+        
+        echo json_encode([
+            'success' => 1,
+            'data' => $formatted_payments,
+            'pagination' => [
+                'current_page' => (int)$page,
+                'total_pages' => 1,
+                'total_items' => count($formatted_payments)
+            ]
+        ]);
+        exit();
+    }
+    
+    // Endpoint pour récupérer les groupes
+    if ($request_uri === '/api/admin/groups' && $method === 'GET') {
+        $groups = DB::table('groups')
+            ->leftJoin('group_members', 'groups.id', '=', 'group_members.group_id')
+            ->select(
+                'groups.id',
+                'groups.name',
+                'groups.description',
+                'groups.created_at',
+                DB::raw('COUNT(group_members.id) as member_count')
+            )
+            ->groupBy('groups.id', 'groups.name', 'groups.description', 'groups.created_at')
+            ->get();
+        
+        echo json_encode([
+            'success' => 1,
+            'data' => $groups
+        ]);
+        exit();
+    }
+    
+    // Endpoint de test
+    if ($request_uri === '/api/test' && $method === 'GET') {
+        echo json_encode([
+            'message' => 'API DONS avec vraie base de données PostgreSQL',
+            'timestamp' => date('c'),
+            'database' => 'PostgreSQL connecté',
+            'status' => 'success',
+            'server' => 'Simple Real Server'
+        ]);
+        exit();
+    }
+    
+    // Endpoint par défaut
+    http_response_code(404);
+    echo json_encode([
+        'error' => 'Endpoint non trouvé',
+        'request_uri' => $request_uri,
+        'method' => $method
+    ]);
+    
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode([
+        'error' => 'Erreur serveur',
+        'message' => $e->getMessage(),
+        'file' => $e->getFile(),
+        'line' => $e->getLine()
+    ]);
+}
+?>

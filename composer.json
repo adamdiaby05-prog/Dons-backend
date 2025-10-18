@@ -1,0 +1,32 @@
+{
+    "name": "dons/backend",
+    "description": "Backend API pour le système de dons avec intégration Barapay",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dons\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "php -l *.php",
+        "deploy": "./deploy.sh production"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "authors": [
+        {
+            "name": "Équipe DONS",
+            "email": "contact@dons.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "stable"
+}

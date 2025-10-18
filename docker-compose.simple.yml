@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:80"
+    environment:
+      - APP_ENV=production
+      - DB_CONNECTION=pgsql
+      - DB_HOST=dons-database-nl3z8n
+      - DB_PORT=5432
+      - DB_DATABASE=Dons
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=9zctibtytwmv640w

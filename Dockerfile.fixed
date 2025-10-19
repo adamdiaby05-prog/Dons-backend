@@ -21,5 +21,5 @@ RUN chown -R www-data:www-data /var/www/html
 # Expose port
 EXPOSE 80
 
-# Simple start command - serve PHP files directly
-CMD ["php", "-S", "0.0.0.0:80", "-t", "."]
+# Start command with CORS headers
+CMD ["php", "-S", "0.0.0.0:80", "-t", ".", "-d", "auto_prepend_file=cors.php"]

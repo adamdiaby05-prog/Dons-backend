@@ -1,12 +1,10 @@
+# Configuration CORS pour Apache
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With, Accept, Origin"
+Header always set Access-Control-Max-Age "86400"
+
+# Gérer les requêtes OPTIONS (preflight)
 RewriteEngine On
-
-# Router vers api_barapay_payment.php
-RewriteRule ^api_barapay_payment\.php$ api_barapay_payment.php [L]
-
-# Router vers api_payment_database.php pour les autres requêtes
-RewriteRule ^api_payment_database\.php$ api_payment_database.php [L]
-
-# Router par défaut vers index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]
